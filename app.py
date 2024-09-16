@@ -24,4 +24,4 @@ def predict_genre():
         response = requests.post(url, json=data, headers=headers)
         result = json.loads(response.text)
         prediction = result['prediction']
-        return render_template('home.html', result = prediction)
+        return render_template('home.html', result = prediction, song_name = song_name, artist = artist)
