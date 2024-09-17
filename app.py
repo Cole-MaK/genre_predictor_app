@@ -15,7 +15,7 @@ def predict_genre():
     else:
         song_name=request.form.get('song_name')
         artist=request.form.get('artist')
-        url = "http://52.53.155.149:80/predict"
+        url = "http://54.193.37.214:80/predict"
         headers = {"Content-Type": "application/json"} 
         data = {}
         data['song_name'] = str(song_name)
